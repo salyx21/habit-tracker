@@ -1,0 +1,18 @@
+.calendar {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 60px;
+}
+
+.date {
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
