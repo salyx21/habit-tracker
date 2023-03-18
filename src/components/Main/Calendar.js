@@ -1,8 +1,8 @@
 import Day from "./Day";
-import styles from "./Calendar.module.css";
 import { Fragment } from "react";
 import ToDoList from "./ToDoList";
 import {useSelector} from 'react-redux';
+import Button from "../UI/Button";
 
 export default function Calendar() {
   let calendar = [];
@@ -24,12 +24,12 @@ export default function Calendar() {
     <Fragment>
       {showModal && <ToDoList />}
       <div>
-        <div className={styles.date}>
+        <div className="text-white font-serif text-center text-5xl mb-8">
           {`${getMonthName}    ${year}`}
         </div>
-        <div className={styles.calendar}>
+        <div className="grid grid-cols-6 gap-4 max-w-2xl mx-auto">
           {calendar.map((number) => {
-            return <Day key={number} num={number} />;
+            return <Day key={number} num={number}/>;
           })}
         </div>
       </div>
